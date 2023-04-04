@@ -18,7 +18,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def initTimer(self):
         self._timer = QTimer(self)
         self._timer.timeout.connect(self._update)
-        self._timer.start(100000 // 60) # 60 FPS
+        self._timer.start(1000 // 60) # 60 FPS
     
     def addChild(self, child):
         self.children.append(child)
