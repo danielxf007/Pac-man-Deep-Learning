@@ -15,7 +15,7 @@ class Environment:
     
     def enterInput(self, control_input):
         self.screen, self.reward, self.done, self.info = self.gym_env.step(control_input)
-    
+        
     def getScreen(self):
         return self.screen
     
